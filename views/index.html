@@ -9,7 +9,15 @@
 
 <body>
     <h1>main menu</h1>
+    <button id="counter">Count: 0</button>
+    <script>
+        let count = 0
+        const counterBtn = document.getElementById('counter')
+        counterBtn.addEventListener('click', () => {
+            counterBtn.textContent = `Count: ${++count}`
+        })
 
+    </script>
 </body>
 
 </html>
